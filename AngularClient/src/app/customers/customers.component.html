@@ -1,0 +1,24 @@
+<h3 style="color:green">Customer List:</h3>
+
+  <a *ngFor="let cust of customers"  [routerLink]="['/detail', cust.id]"  class="col-1-4">
+  <div>
+    <table class="table">
+   
+      <tr>
+        <th>Customer Id</th>
+        <th>Customer Name</th>
+        <th>Customer Address</th>
+        <th>Customer Phone</th>
+      </tr>
+   
+    <tbody>
+      <tr>
+        <td>{{cust.id}}</td>
+    	<td>{{cust.name}}</td>
+    	<td>{{cust.address}}</td>
+    	<td>{{cust.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </a>
